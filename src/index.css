@@ -12,3 +12,133 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding:20px;
+}
+
+.header{
+  height:100px;
+  width: 100%;
+  display:flex;
+}
+
+.name,
+.race,
+.attributes,
+.abilities,
+.lang,
+.defense,
+.attack,
+.items,
+.personality,
+.features{
+  border: 1px solid black;
+}
+
+
+.name,
+.race{
+  width:50%;
+  height:100%;
+}
+
+.name{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.race{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+}
+
+.row{
+  display:flex;
+  justify-content: space-between;
+}
+
+.row div{
+  width:33.33333%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data{
+  width:100%;
+  height:1000px;
+  display:flex;
+  
+}
+
+.col{
+  width:33.3333%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.skills{
+  display:flex;
+  height:70%;
+}
+
+.lang{
+  height:30%;
+}
+
+.attributes{
+  width:40%;
+  
+}
+
+.attributes ul{
+  list-style: none;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.attributes li{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.abilities{
+  width:60%;
+}
+
+.defense,
+.attack,
+.items{
+  height:33.3333%;
+}
+
+.personality{
+  height:40%;
+}
+
+.features{
+  height:60%;
+}
